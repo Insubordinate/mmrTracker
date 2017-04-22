@@ -13,7 +13,7 @@ def addChampion():
         info['champions'].append({champion:{"startingMMR":startingMMR,"currentMMR":""}})
 
     with open('data.JSON','w') as o:
-              json.dump(info,o)
+              json.dump(info,o, sort_keys=True, indent=4, separators=(',', ': '))
 
     
     

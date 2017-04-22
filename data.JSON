@@ -1,1 +1,30 @@
-{"overallMMR": "4060", "champions": [{"lex": {"currentMMR": "2050", "pastMMR": ""}}, {"1": {"startingMMR": "10", "currentMMR": ""}}, {"kek": {"startingMMR": "10", "currentMMR": ""}}], "previousMMR": "4018"}
+{
+    "champions": [
+        {
+            "lex": {
+                "currentMMR": "2050",
+                "pastMMR": ""
+            }
+        },
+        {
+            "1": {
+                "currentMMR": "",
+                "startingMMR": "10"
+            }
+        },
+        {
+            "kek": {
+                "currentMMR": "",
+                "startingMMR": "10"
+            }
+        },
+        {
+            "Tyra": {
+                "currentMMR": "",
+                "startingMMR": "2050"
+            }
+        }
+    ],
+    "overallMMR": "4060",
+    "previousMMR": "4018"
+}
