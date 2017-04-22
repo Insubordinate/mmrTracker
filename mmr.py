@@ -4,19 +4,27 @@ import json
 
 
 
-def addChampion(file):
+def addChampion():
     champion = raw_input("Please enter champion name:" )
     startingMMR = raw_input("What is your starting MMR: ")
 
-    info = json.load(file)
-    info["champions"].append({ champion :{"currentMMR": startingMMR,"pastMMR":"" } } )
-    json.dumps(info,file)
+    with open('data.JSON',"r") as i:
+        info = json.load(i)
+        info['champions'].append({champion:{"startingMMR":startingMMR,"currentMMR":""}})
+
+    with open('data.JSON','w') as o:
+              json.dump(info,o)
+
     
-def addMMR(file):
+    
+
+
+    
+def addMMR():
     champion = raw_input("Please enter your champion:")
     addToMMR = raw_input("How much did you change?")
 
-    info = json.load(file)
+    info = json.load()
     print  info['overallMMR']
 
 def addToMmmr(file):
@@ -25,7 +33,9 @@ def addToMmmr(file):
 
 
 
-f = open('data.JSON','r+')
+
+
+
 while True:
     print "What would you like to do"
     print "1 : Add a champion"
@@ -38,7 +48,7 @@ while True:
     option = int(raw_input("Enter a number "))
 
     if option == 1:
-        addChampion(f)
+        addChampion()
 
     elif option == 2:
         addMMR(f)        
