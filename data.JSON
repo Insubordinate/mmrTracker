@@ -1,8 +1,9 @@
-data = 
-{	"overallMMR":"4018",	
-	"previousMMR":"4018",
-	"champions":{
-		"lex":{"currentMMR":"","pastMMR":"" }  
-	}
+
+{	
+	"overallMMR" : "4018",	
+	"previousMMR" : "4018",
+	"champions":[
+					{ "lex" : {"currentMMR":"","pastMMR":"" } }
+				]
 
 }
